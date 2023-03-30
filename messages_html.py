@@ -13,4 +13,5 @@ if st.button("Render Preview"):
         f.write(html_code)
     
     # Use an IFrame to display the HTML preview
-    st.components.v1.iframe(src="./temp.html", height=500, scrolling=True)
+    preview_url = f"data:text/html;base64,{b64encode(open('temp.html', 'r').read().encode()).decode()}"
+    st.components.v1.iframe(src=preview_url, height=500, scrolling=True)
