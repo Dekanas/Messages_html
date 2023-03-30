@@ -4,11 +4,6 @@ import base64
 # Set the title of the app
 st.title("HTML Preview")
 
-# Set the theme based on the system color mode
-if st.get_theme().lower() == "dark":
-    st.set_theme("dark")
-else:
-    st.set_theme("light")
 
 # Add a text area for the user to paste the HTML code
 html_code = st.text_area("Paste HTML code here", height=300)
