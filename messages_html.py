@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 # Set the title of the app
 st.title("HTML Preview")
